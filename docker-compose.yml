@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+    app:
+      image: nginx
+      user: "1000"
+      volumes:
+        - "/etc/passwd:/etc/passwd:ro"
+    app1:
+      image: nginx
+      user: "1000"
+      volumes:
+        - "/etc/passwd:/etc/passwd:ro"
